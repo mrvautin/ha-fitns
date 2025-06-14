@@ -17,3 +17,4 @@
     "DATABASE_DIRECT_URL": "postgresql://postgres:postgres@db:5432/fitns",
     "SECRET": "this-is-secret"
   }
+}
