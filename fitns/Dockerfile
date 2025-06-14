@@ -1,12 +1,12 @@
-FROM mrvautin/fitns:latest
+FROM ghcr.io/mrvautin/fitns:latest
 
 # Set working directory
-WORKDIR /var/www
+WORKDIR /app
 
-# Install additional dependencies (example)
-RUN apt-get update && apt-get install -y \
-    curl
+# Copy application source code
+COPY . .
 
+# Expose application port
 EXPOSE 3000
 
 # Start the application
