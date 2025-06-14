@@ -1,0 +1,17 @@
+{
+  "name": "Fitns Home Assistant",
+  "version": "1.0.0",
+  "slug": "ha-fitns",
+  "description": "Fitns Home Assistant add-on",
+  "startup": "system",
+  "boot": "auto",
+  "image": "ghcr.io/mrvautin/fitns",
+  "ports": {
+    "3000/tcp": 3000
+  },
+  "environment": {
+    "DATABASE_URL": "postgresql://postgres:postgres@db:5432/fitns"
+  },
+  "host_network": false,
+  "arch": ["armv7", "armhf", "aarch64", "amd64", "i386"]
+}
