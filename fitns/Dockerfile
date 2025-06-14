@@ -1,4 +1,4 @@
-FROM ghcr.io/mrvautin/fitns:latest
+FROM ghcr.io/mrvautin/fitns
 
 # Set working directory
 WORKDIR /app
