@@ -6,10 +6,8 @@ services:
     ports:
       - 3000:3000
     volumes:
-      - ./config:/var/www/config/app
-      - ./build:/var/www/build
-      - ./storage/database:/var/www/storage/database
-      - ./storage/files:/var/www/storage/files
+      - .:/app
+      - /app/node_modules
     env_file: ./.env
     build:
       context: .
