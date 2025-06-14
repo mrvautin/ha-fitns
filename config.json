@@ -5,12 +5,14 @@
   "description": "Fitns Home Assistant add-on",
   "startup": "system",
   "boot": "auto",
-  "image": "ghcr.io/mrvautin/fitns",
+  "image": "ghcr.io/mrvautin/fitns:latest",
   "ports": {
     "3000/tcp": 3000
   },
   "environment": {
-    "DATABASE_URL": "postgresql://postgres:postgres@db:5432/fitns"
+    "DATABASE_URL": "postgresql://postgres:postgres@db:5432/fitns",
+    "DATABASE_DIRECT_URL": "postgresql://postgres:postgres@db:5432/fitns",
+    "SECRET": "this-is-secret"
   },
   "host_network": false,
   "arch": ["armv7", "armhf", "aarch64", "amd64", "i386"]
